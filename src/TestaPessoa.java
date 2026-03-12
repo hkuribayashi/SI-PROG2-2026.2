@@ -8,10 +8,10 @@ void main(){
 
     PessoaFisica pf;
     pf = new PessoaFisica("Teste", "Teste", "teste@", "123");
-    IO.println(pf.cpf);
+    //IO.println(pf.cpf);
 
     PessoaJuridica pj;
     pj = new PessoaJuridica("X", "Av. X, n. 10", "x@", "123");
-    IO.println(pj.cnpj);
+    //IO.println(pj.cnpj);
 
 }
