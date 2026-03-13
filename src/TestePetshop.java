@@ -23,14 +23,12 @@ public String getNomeAnimalMaisVelho(List<Animal> listaAnimais){
     String nomeAnimalMaisVelho = "";
     for (Animal a: listaAnimais){
         int ano = a.getDataNascimento().getYear();
-        Animal animalMaisVelho;
         if (ano < menorAnoNascimento){
             menorAnoNascimento = ano;
-            animalMaisVelho = a;
+            nomeAnimalMaisVelho = a.getNome();
         }
-        nomeAnimalMaisVelho = animalMaisVelho.getNome();
     }
-    return "";
+    return nomeAnimalMaisVelho;
 }
 
 void main(){
