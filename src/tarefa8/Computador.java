@@ -7,11 +7,11 @@ public class Computador {
     protected String placaGrafica;
     protected Boolean ligado;
 
-    public Computador(String m, Integer mr, String pg, Boolean l){
+    public Computador(String m, Integer mr, String pg){
         this.marca = m;
         this.memoriaRAM = mr;
         this.placaGrafica = pg;
-        this.ligado = l;
+        this.ligado = false;
     }
 
     public void ligar(){

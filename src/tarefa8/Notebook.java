@@ -5,9 +5,9 @@ public class Notebook extends Computador{
     private Double capacidadeBateria;
     private Double tamanhoTela;
 
-    public Notebook(String m, Integer mr, String pg, Boolean l,
+    public Notebook(String m, Integer mr, String pg,
                                             Double cb, Double tt) {
-        super(m, mr, pg, l);
+        super(m, mr, pg);
         this.capacidadeBateria = cb;
         this.tamanhoTela = tt;
     }
@@ -26,5 +26,17 @@ public class Notebook extends Computador{
 
     public void setTamanhoTela(Double tamanhoTela) {
         this.tamanhoTela = tamanhoTela;
+    }
+
+    @Override
+    public String toString() {
+        return "Notebook{" +
+                "capacidadeBateria=" + capacidadeBateria +
+                ", tamanhoTela=" + tamanhoTela +
+                ", marca='" + marca + '\'' +
+                ", memoriaRAM=" + memoriaRAM +
+                ", placaGrafica='" + placaGrafica + '\'' +
+                ", ligado=" + ligado +
+                '}';
     }
 }

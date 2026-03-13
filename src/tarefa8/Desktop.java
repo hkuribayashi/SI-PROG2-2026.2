@@ -5,9 +5,9 @@ public class Desktop extends Computador{
     private Integer tamanhoGabinete;
     private Monitor monitor;
 
-    public Desktop(String m, Integer mr, String pg, Boolean l,
+    public Desktop(String m, Integer mr, String pg,
                    Integer tg, String mm, Double tt) {
-        super(m, mr, pg, l);
+        super(m, mr, pg);
         this.tamanhoGabinete = tg;
         this.monitor = new Monitor(mm, tt);
     }
@@ -26,5 +26,17 @@ public class Desktop extends Computador{
 
     public void setMonitor(Monitor monitor) {
         this.monitor = monitor;
+    }
+
+    @Override
+    public String toString() {
+        return "Desktop{" +
+                "ligado=" + ligado +
+                ", placaGrafica='" + placaGrafica + '\'' +
+                ", memoriaRAM=" + memoriaRAM +
+                ", marca='" + marca + '\'' +
+                ", monitor=" + monitor +
+                ", tamanhoGabinete=" + tamanhoGabinete +
+                '}';
     }
 }
