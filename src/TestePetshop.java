@@ -1,4 +1,4 @@
-import br.unifesspa.*;
+/* import br.unifesspa.*;
 
 public Integer getTotalDeGatos(List<Animal> listaAnimais){
     Integer totalDeGatos = 0;
@@ -44,3 +44,4 @@ void main(){
     String nomeMaisVelho = getNomeAnimalMaisVelho(listaDeAnimais);
     IO.println("Nome Animal mais Velho: "+nomeMaisVelho);
 }
+*/
